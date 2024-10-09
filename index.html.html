@@ -3,53 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site de Acesso Limitado</title>
+    <title>Agradecimento</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f0f0f0;
             margin: 0;
-        }
-        .container {
-            text-align: center;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            background-color: white;
+            background-color: #f0f0f0;
         }
         h1 {
-            font-size: 24px;
+            color: #4CAF50;
+        }
+        p {
+            font-size: 16px;
+            color: #555;
         }
     </style>
 </head>
 <body>
-
-<div class="container">
-    <h1 id="message"></h1>
-</div>
-
-<script>
-    function checkAccessTime() {
-        const now = new Date();
-        const currentHour = now.getHours();
-
-        const messageElement = document.getElementById('message');
-        
-        // Verifica se está entre 17:00 (5 da tarde) e 06:00 (6 da manhã)
-        if (currentHour >= 17 || currentHour < 6) {
-            messageElement.textContent = "Senha: 22/03/2007";
-        } else {
-            messageElement.textContent = "O site pode ser acessado apenas entre 17:00 e 06:00.";
-        }
-    }
-
-    // Checa o horário no carregamento da página
-    checkAccessTime();
-</script>
-
+    <h1>Obrigado, Larissa!</h1>
+    <p>OBS: Eu queria colocar uma foto nossa, mas eu não tenho nenhuma de nós juntos.</p>
 </body>
 </html>
